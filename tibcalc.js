@@ -214,13 +214,11 @@ function make_select(id, options, config) {
 }
 
 /**
- * make_div: return HTML for a div element
- *
- * id - string
- *     The ID of the div element or "" if no ID
- *
- * elts - HTML string OR array of HTML strings
- *     The child element(s) of the div
+ * Create a <div> element
+ * @param {String} id The ID of the div element or "" if no ID
+ * @param {String|Array} elts HTML string or array of HTML strings
+ * for the child element(s)
+ * @returns {String} HTML code
  */
 function make_div(id, elts) {
 	var result;
@@ -243,14 +241,17 @@ function make_div(id, elts) {
 }
 
 /**
- * make_span: return HTML for a span element
+ * Create a <span> element
+ * @param {String} text The content of the element
+ * @returns {String} HTML code
  */
 function make_span(text) {
 	return "<span>" + text + "</span>";
 }
 
 /**
- * rabjung_select: return HTML for rabjung select element
+ * Create a rabjung selector element
+ * @returns {String} HTML code
  */
 function rabjung_select() {
 	var options = [];
@@ -271,7 +272,8 @@ function rabjung_select() {
 }
 
 /**
- * tibyear_select: return HTML for Tibetan year select element
+ * Create a Tibetan year selector element
+ * @returns {String} HTML code
  */
 function tibyear_select() {
 	var options = [];
@@ -288,7 +290,8 @@ function tibyear_select() {
 }
 
 /**
- * tibmonth_select: return HTML for Tibetan month select element
+ * Create a Tibetan month selector element
+ * @returns {String} HTML code
  */
 function tibmonth_select() {
 	var options = [];

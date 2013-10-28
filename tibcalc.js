@@ -1978,7 +1978,7 @@ function tibdate_loaded() {
 
 	// Set up UI elements
 	$('#tibdate_container').tabs();
-	$('#greg_datepicker').datepicker({onSelect: gd_changed});
+	$('#greg_datepicker').datepicker({onSelect: gd_changed, changeYear: true});
 
 	if (getURLParameter('debug')) {
 		check_tmi_records();
